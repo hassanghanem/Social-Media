@@ -1,0 +1,112 @@
+﻿html,body{
+    display:grid;
+    height:100%;
+    width:100%;
+}
+.wrapper {
+    display: block;
+}
+.wrapper .icon{
+    margin: 0 20px;
+    display:flex;
+    cursor:pointer;
+    align-items:center;
+    justify-content: center;
+    flex-direction:column;
+    z-index:2;
+    height:100px;
+    position:relative;
+}
+.wrapper .icon span{
+    height: 60px;
+    width:60px;
+    display:block;
+    background: #fff;
+    text-align:center;
+    border-radius:50%;
+    box-shadow: 0 20px 20px rgba(0,0,0,0.1);
+}
+.wrapper .icon:hover span i{
+    color:#fff;
+}
+
+.wrapper .icon span i{
+    font-size: 30px;
+    line-height:60px;
+}
+.wrapper .icon .tooltip{
+    position: absolute;
+    top: -15px;
+    background: #fff;
+    font-size:20px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    padding: 10px 18px;
+    border-radius: 25px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.6s;
+}
+.wrapper .icon:hover .tooltip{
+    opacity: 1;
+    pointer-events: auto;
+    top:-20px;
+}
+.wrapper .icon .tooltip:before{
+    position: absolute;
+    content:"";
+    height:15px;
+    width:15px;
+    background:#fff;
+    bottom:-8px;
+    left:50%;
+    transform: translateX(-50%) rotate(50deg);
+}
+.wrapper .icon:hover span
+.wrapper .icon:hover .tooltip{
+    text-shadow:0px -1px 0px rgba(0,0,0,0.4)
+}
+.wrapper .facebook:hover span,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip:before{
+    background:#007aff
+}
+.wrapper .twitter:hover span,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip:before{
+    background:#0a96f2
+}
+.wrapper .whatsapp:hover span,
+.wrapper .whatsapp:hover .tooltip,
+.wrapper .whatsapp:hover .tooltip:before{
+    background:#38eb15
+}
+.wrapper .telegram:hover span,
+.wrapper .telegram:hover .tooltip,
+.wrapper .telegram:hover .tooltip:before{
+    background:#04caf7
+}
+.wrapper .google:hover span,
+.wrapper .google:hover .tooltip,
+.wrapper .google:hover .tooltip:before{
+    background:#4285f4
+}
+.wrapper .youtube:hover span,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip:before{
+    background:#f53310
+}
+.wrapper .instagram:hover span,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip:before{
+    background:#f70751
+}
+.wrapper .gmail:hover span,
+.wrapper .gmail:hover .tooltip,
+.wrapper .gmail:hover .tooltip:before{
+    background:#f6ea06
+}
+.wrapper .messenger:hover span,
+.wrapper .messenger:hover .tooltip,
+.wrapper .messenger:hover .tooltip:before{
+    background:#f7098c
+}
